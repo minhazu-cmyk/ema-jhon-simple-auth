@@ -2,7 +2,7 @@ import React from 'react';
 import fakeData from '../../fakeData';
 const Manage = () => {
   const handleProduct=() =>{
-    fetch('http://localhost:5000/addProduct',{
+    fetch('https://nameless-dusk-60075.herokuapp.com/addProduct',{
       method:"POST",
     headers:{
       'Content-Type': 'application/json'

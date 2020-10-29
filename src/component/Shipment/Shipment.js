@@ -14,7 +14,7 @@ const Shipment = () => {
       const saveCart = getDatabaseCart();
       const orderDetails = {...logInUser , products:saveCart, Shipment:data, orderTime:new Date()};
 
-      fetch('http://localhost:5000/addOrder',{
+      fetch('https://nameless-dusk-60075.herokuapp.com/addOrder',{
         method:'POST',
         headers:{
           'content-type': 'application/json'
